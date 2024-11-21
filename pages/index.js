@@ -48,31 +48,41 @@ function App() {
 
       <h1>Projetos</h1>
 
+      <br></br>
       <h2>Controle Depósito</h2>
 
-      <video className='h-80  mx-auto block' controls>
-        <source src="/assets/Video demonstração controle depósito.mp4" type="video/mp4" />
-        Seu navegador não suporta a tag de vídeo.
-      </video> 
-
-      <p>Sistema de controle de depósito e contas para um depósito de banana.</p>
-
-      <div className='flex justify-normal'>
-
-      <p>Técnologias utilizadas:</p>
-
-      <ul className='flex items-center gap-3 text-neutral-100'>
-        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Python</li>
-        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Flask</li>
-        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>SQL</li>
-        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>HTML</li>
-        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>CSS</li>
-        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Javascript</li>
-      </ul>
-
-      </div>
-
       <br></br>
+
+      <div className='flex center-item'>
+
+        <video className='h-80  mx-auto block' controls>
+          <source src="/assets/Video demonstração controle depósito.mp4" type="video/mp4" />
+          Seu navegador não suporta a tag de vídeo.
+        </video> 
+
+
+        <div className='flex justify-between flex-col'>
+        <p>Sistema de controle de depósito e contas para um depósito de banana.<br></br><br></br>
+        Projeto desenvolvido sob encomenda de cliente, dono de depósito, ele me procurou pois queria ter controle de tudo que entrava e saía do depósito.<br></br><br></br>
+        Antes ele fazia todo o controle utilizando papéis para fazer as notas e cadernos pra manter a conta de cada cliente, agora todo o controle é feito pelo sistema.</p>
+
+        <p></p>
+
+
+          <ul className='flex items-center gap-3 text-neutral-100'>
+          <p className='text-black'>Técnologias utilizadas:</p>
+            <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Python</li>
+            <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Flask</li>
+            <li className=' bg-gray-500 font-bold p-1 rounded-lg'>SQL</li>
+            <li className=' bg-gray-500 font-bold p-1 rounded-lg'>HTML</li>
+            <li className=' bg-gray-500 font-bold p-1 rounded-lg'>CSS</li>
+            <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Javascript</li>
+          </ul>
+
+        </div>
+
+        </div>
+<br></br>
       </div>
   );
 }
