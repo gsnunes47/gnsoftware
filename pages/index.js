@@ -48,19 +48,34 @@ function App() {
 
       <h1>Projetos</h1>
 
-      <br></br>
       <h2>Controle Depósito</h2>
 
-      <video className='m-' controls class="m-10 w-100% h-80">
+      <video className='h-80  mx-auto block' controls>
         <source src="/assets/Video demonstração controle depósito.mp4" type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.
-      </video>
+      </video> 
 
       <p>Sistema de controle de depósito e contas para um depósito de banana.</p>
-      <p>Técnologias utilizadas: Python, Flask, SQL, HTML, CSS e Javascript</p>
+
+      <div className='flex justify-normal'>
+
+      <p>Técnologias utilizadas:</p>
+
+      <ul className='flex items-center gap-3 text-neutral-100'>
+        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Python</li>
+        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Flask</li>
+        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>SQL</li>
+        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>HTML</li>
+        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>CSS</li>
+        <li className=' bg-gray-500 font-bold p-1 rounded-lg'>Javascript</li>
+      </ul>
+
+      </div>
+
       <br></br>
-    </div>  
+      </div>
   );
 }
+
 
 export default App;
