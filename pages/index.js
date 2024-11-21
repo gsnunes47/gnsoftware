@@ -16,7 +16,7 @@ function App() {
         {/* links */}
         <div className='flex justify-end gap-4 m-1'>
           <a href='#Sobre mim'>Sobre</a>
-          <a href='#'>Projetos</a>
+          <a href='#Projetos'>Projetos</a>
           <a href='#'>Contato</a> 
         </div>
         
@@ -48,14 +48,17 @@ function App() {
 
       <h1>Projetos</h1>
 
-      <p>Alguns projetos que já desenvolvi:</p>
-
+      <br></br>
       <h2>Controle Depósito</h2>
 
-      
+      <video className='m-' controls class="m-10 w-100% h-80">
+        <source src="/assets/Video demonstração controle depósito.mp4" type="video/mp4" />
+        Seu navegador não suporta a tag de vídeo.
+      </video>
 
       <p>Sistema de controle de depósito e contas para um depósito de banana.</p>
-
+      <p>Técnologias utilizadas: Python, Flask, SQL, HTML, CSS e Javascript</p>
+      <br></br>
     </div>  
   );
 }
