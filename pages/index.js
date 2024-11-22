@@ -15,7 +15,7 @@ function App() {
         <div className="mt-2 flex md:gap-7 sm:gap-7 gap-2 ">
           <a href="#Sobre-mim">Sobre</a>
           <a href="#Projetos">Projetos</a>
-          <a href="#">Contato</a>
+          <a href="https://wa.me/5511951178396">Contato</a>
         </div>
 
         {/* Redes */}
