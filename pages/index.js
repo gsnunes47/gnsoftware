@@ -5,9 +5,9 @@ function App() {
     <div className='bg-neutral-200 w-full h-full'>
       <nav className="bg-black md:text-4xl sm:text-2xl text-white flex flex-wrap justify-between p-4">
         {/* Icon */}
-        <div>
+        <div className='m-1 bg-white rounded-full'>
           <a href="/" rel="noopener noreferrer">
-            <img src="/assets/gnlogo.png" alt="GN Logo" className="h-8 w-8 md:h-16 md:w-16 sm:h-12 sm:w-12 bg-white rounded-full" />
+            <img src="/assets/gnlogo.png" alt="GN Logo" className="h-8 w-8 md:h-16 md:w-16 sm:h-12 sm:w-12" />
           </a>
         </div>
 
@@ -20,12 +20,19 @@ function App() {
 
         {/* Redes */}
         <div className="flex gap-5">
+
+        <div className='h-8 w-8 md:h-16 md:w-16 sm:h-12 sm:w-12 p-1 bg-white rounded-full'>
           <a href="https://www.linkedin.com/in/gsnunes47/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/linkedin.png" alt="Linkedin Logo" className="h-8 w-8 md:h-16 md:w-16 sm:h-12 sm:w-12 bg-white p-0.5 rounded-full" />
+            <img src="/assets/linkedin.png" alt="Linkedin Logo"/>
           </a>
-          <a href="https://github.com/gsnunes47" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/github-logo.png" alt="GitHub Logo" className="h-8 w-8 md:h-16 md:w-16 sm:h-12 sm:w-12 bg-white p-0.5 rounded-full" />
+        </div>
+
+        <div className='h-8 w-8 md:h-16 md:w-16 sm:h-12 sm:w-12 p-1 bg-white rounded-full'>
+          <a  href="https://github.com/gsnunes47" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/github-logo.png" alt="GitHub Logo" className="" />
           </a>
+        </div>
+
         </div>
       </nav>
 

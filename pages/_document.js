@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-         
+          <title>GN  Software</title>
           <link rel="icon" href="/assets/gnlogo.png" type="image/png" />
           
           <meta name="description" content="GN Software - Soluções Personalizadas em Desenvolvimento de Sistemas" />
