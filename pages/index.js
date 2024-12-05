@@ -1,8 +1,9 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa6'
 
 function App() {
   return (
-    <div className='bg-neutral-200 w-full h-full'>
+    <div className='bg-neutral-200  w-full h-full'>
       <nav className="bg-black md:text-4xl sm:text-2xl text-white flex flex-wrap justify-between p-4">
         {/* Icon */}
         <div className='m-1 bg-white rounded-full'>
@@ -10,6 +11,14 @@ function App() {
             <img src="/assets/gnlogo.png" alt="GN Logo" className="h-8 w-8 md:h-16 md:w-16 sm:h-12 sm:w-12" />
           </a>
         </div>
+
+        {/* Botão Whats */}
+        <a
+          href='https://wa.me/5511951178396'
+          className='bg-green-600 hover:bg-green-700 w-min p-3 rounded-full fixed bottom-10 right-4 cursor-pointer md:right-8 transition-colors duration-300 ease-in-out'
+        >
+          <FaWhatsapp color='white' className='w-7 h-7 md:w-10 md:h-10' />
+        </a>
 
         {/* Links */}
         <div className="mt-2 flex md:gap-7 sm:gap-7 gap-2 ">
@@ -54,35 +63,72 @@ function App() {
 
         <h1 className="m-2 mt-4 text-4xl font-bold" id="Projetos">Projetos</h1><br />
         <div className="m-4">
-          <h2 className="text-3xl font-semibold mt-6">Controle Depósito</h2>
+          <div>
+            {[
+            {
+            title: "Controle de Depósito (Mini ERP)",
+            description: ["Sistema de controle de depósito e contas para um depósito de bananas.",
+                          "Projeto desenvolvido sob encomenda de um cliente, dono de depósito. Ele me procurou porque queria ter controle de tudo que entrava e saía do depósito.",
+                          "Antes, ele fazia todo o controle utilizando papéis para fazer as notas e cadernos para manter as contas de cada cliente. Agora, todo o controle é feito pelo sistema."],
+            tecs: ["Python", "Flask", "SQL", "HTML", "CSS", "Javascript"],
+            video: "/assets/Video demonstração controle depósito.mp4"
+            },
+            {
+              title: "Landing Page Profissional",
+              description: ["Landing Page profissional com um design intuitivo, totalmente customizável", 
+                            "Projetada para atrair a atenção de potenciais clientes e facilitar o contato imediato por meio de um botão direto para o WhatsApp.",
+                            "Ideal para transformar visitantes em clientes.",
+                            "Essa em específico foi feita para um advogado."],
+              tecs: ["React", "Next", "Tailwind", "HTML", "CSS", "JS"],
+              video: "assets/video landing page.mp4"
+              }
+            ]
+            .map((area, index) => (
+              
+              <div key={index}>
+              
+              <h2 className="text-3xl font-semibold mt-6">{area.title}</h2>
 
-          <div className="flex flex-col lg:flex-row gap-8 mt-8">
-            <video className="w-full lg:w-1/2" controls>
-              <source src="/assets/Video demonstração controle depósito.mp4" type="video/mp4" />
-              Seu navegador não suporta a tag de vídeo.
-            </video>
+              <div className="flex flex-col lg:flex-row gap-8 mt-8">
+                <video className="w-full lg:w-1/2" controls>
+                  <source src={area.video} type="video/mp4" />
+                  Seu navegador não suporta a tag de vídeo.
+                </video>
 
-            <div className="w-full h- justify-between flex flex-col">
-              <p>Sistema de controle de depósito e contas para um depósito de bananas.</p><br />
-              <p>Projeto desenvolvido sob encomenda de um cliente, dono de depósito. Ele me procurou porque queria ter controle de tudo que entrava e saía do depósito.</p><br />
-              <p>Antes, ele fazia todo o controle utilizando papéis para fazer as notas e cadernos para manter as contas de cada cliente. Agora, todo o controle é feito pelo sistema.</p><br />
+                <div className="w-full h- justify-between flex flex-col">
 
-              <div className="flex flex-col sm:flex-row w-full">
-                <p className="text-black font-semibold text-2xl mr-2 mt-4">Tecnologias utilizadas:</p>
-                <ul className="flex flex-wrap gap-2 text-neutral-100 mt-6 sm:mt-3">
-                  <li className="bg-gray-500 font-bold p-1 rounded-lg">Python</li>
-                  <li className="bg-gray-500 font-bold p-1 rounded-lg">Flask</li>
-                  <li className="bg-gray-500 font-bold p-1 rounded-lg">SQL</li>
-                  <li className="bg-gray-500 font-bold p-1 rounded-lg">HTML</li>
-                  <li className="bg-gray-500 font-bold p-1 rounded-lg">CSS</li>
-                  <li className="bg-gray-500 font-bold p-1 rounded-lg">JavaScript</li>
-                </ul>
+                  <div>
+
+                    {area.description.map((texts, idx) =>(
+                    
+                    <div>
+                      <p key={idx}>{texts}</p><br/>
+                    </div>
+
+                  ))}
+
+                  </div>
+                  <br/>
+
+                  <div className="flex flex-col sm:flex-row w-full">
+                    <p className="font-semibold text-2xl mr-2 mt-4">Técnologias utilizadas:</p>
+                    <ul className="flex flex-wrap gap-2 text-neutral-100 mt-6 sm:mt-3">
+                      {area.tecs.map((tec, idx) => (
+                        <li key={idx} className="bg-green-600 font-bold p-1 rounded-lg">{tec}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                </div>
               </div>
-            </div>
+                
+              <br/>
+              </div>
+            ))}
           </div>
 
         </div>
-        <br />
+        <br/>
       </div>
 
       <footer>
