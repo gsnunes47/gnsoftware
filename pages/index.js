@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa6'
 
 function App() {
   return (
-    <div className='bg-neutral-200  w-full h-full'>
+    <div className='w-full h-full'>
       <nav className="bg-black md:text-4xl sm:text-2xl text-white flex flex-wrap justify-between p-4">
         {/* Icon */}
         <div className='m-1 bg-white rounded-full'>
@@ -45,7 +45,7 @@ function App() {
         </div>
       </nav>
 
-      <div className="p-2 text-lg 2xl:p-5 sm:text-2xl">
+      <div className="m-2 mt-10 p-2 text-lg 2xl:p-5 sm:text-2xl">
         <div className="p-2 mt-4">
           <h1 className="text-4xl font-bold mb-2" id="Sobre-mim">Sobre mim</h1> <br />
           <p>
@@ -111,7 +111,7 @@ function App() {
                   <br/>
 
                   <div className="flex flex-col sm:flex-row w-full">
-                    <p className="font-semibold text-2xl mr-2 mt-4">Técnologias utilizadas:</p>
+                    <p className="font-semibold text-2xl mr-2 mt-4">Tecnologias utilizadas:</p>
                     <ul className="flex flex-wrap gap-2 text-neutral-100 mt-6 sm:mt-3">
                       {area.tecs.map((tec, idx) => (
                         <li key={idx} className="bg-green-600 font-bold p-1 rounded-lg">{tec}</li>
