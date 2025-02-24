@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa6'
 
 function App() {
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full' style={{ background: "url(https://ci3.googleusercontent.com/meips/ADKq_NYuCr3B2fqHLyRH_X5hhUp0KgIi5wCeiK5BfpsPeS5bkkPIbABur1q_ePNoLOQAHGuTOkINn1ws4kf0A09ZpIO3huJsQx0Cqmn_i_hH=s0-d-e1-ft#https://javascript30.com/images/topographic-pattern.png)"}}>
       <nav className="bg-black md:text-4xl sm:text-2xl text-white flex flex-wrap justify-between p-4">
         {/* Icon */}
         <div className='m-1 bg-white rounded-full'>
@@ -46,8 +46,8 @@ function App() {
       </nav>
 
       <div className="m-2 mt-10 p-2 text-lg 2xl:p-5 sm:text-2xl">
-        <div className="p-2 mt-4">
-          <h1 className="text-4xl font-bold mb-2" id="Sobre-mim">Sobre mim</h1> <br />
+        <div className="p-2 font-bold mt-4">
+          <h1 className="text-4xl font-black mb-2" id="Sobre-mim">Sobre mim</h1> <br />
           <p>
             Olá, eu sou o Gustavo! Tenho 20 anos e sou um desenvolvedor de software, formado em Análise e Desenvolvimento de Sistemas pela UNICSUL.
           </p><br />
@@ -97,7 +97,7 @@ function App() {
 
                 <div className="w-full h- justify-between flex flex-col">
 
-                  <div>
+                  <div className='font-semibold'>
 
                     {area.description.map((texts, idx) =>(
                     
@@ -111,7 +111,7 @@ function App() {
                   <br/>
 
                   <div className="flex flex-col sm:flex-row w-full">
-                    <p className="font-semibold text-2xl mr-2 mt-4">Tecnologias utilizadas:</p>
+                    <p className="font-bold text-2xl mr-2 mt-4">Tecnologias utilizadas:</p>
                     <ul className="flex flex-wrap gap-2 text-neutral-100 mt-6 sm:mt-3">
                       {area.tecs.map((tec, idx) => (
                         <li key={idx} className="bg-green-600 font-bold p-1 rounded-lg">{tec}</li>
